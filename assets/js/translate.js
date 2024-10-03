@@ -43,7 +43,7 @@ function updatePageTranslations() {
   // Update accessories content
   if (prioritizeTranslatedAccessories) {
     updateAccessoriesContent();
-  } 
+  }
 }
 
 // Initialize language system
@@ -219,7 +219,7 @@ function updateTranslations() {
 function updateHeaderContent() {
   const t = translations.header || {}; // Use empty object as fallback
 
-  const logoTextElement = document.querySelector(".header-logo-text");
+  const logoTextElement = document.querySelector(".logo a span");
   if (logoTextElement) {
     logoTextElement.textContent = t.logoText || headerLogoText;
   }
@@ -235,16 +235,21 @@ function updateHeaderContent() {
 function updateTutorialContent() {
   const t = translations.tutorial || []; // Use empty array as fallback
 
-  const tutorialButtons = document.querySelectorAll('.tutorial-buttons .button-segment');
+  const tutorialButtons = document.querySelectorAll(
+    ".tutorial-buttons .button-segment"
+  );
   tutorialButtons.forEach((button, i) => {
     const tutorialData = t[i] || tutorialDefinitions[i];
     button.textContent = tutorialData.name || tutorialDefinitions[i].name;
   });
 
-  const tutorialDescriptions = document.querySelectorAll('.tutorial-description .description-segment p');
+  const tutorialDescriptions = document.querySelectorAll(
+    ".tutorial-description .description-segment p"
+  );
   tutorialDescriptions.forEach((description, i) => {
     const tutorialData = t[i] || tutorialDefinitions[i];
-    description.textContent = tutorialData.description || tutorialDefinitions[i].description;
+    description.textContent =
+      tutorialData.description || tutorialDefinitions[i].description;
   });
 }
 
@@ -253,4 +258,3 @@ function updateAccessoriesContent() {
 
   doc.select(".accessories aside").html(t.content || simpleAbout);
 }
-
