@@ -92,6 +92,7 @@ doc.html(`
       <div class="manage">
         <div class="customDF">
           <span>Preference Adjustments:</span>
+          <button id="cusdf-bounds" style="margin-right: 4px">Preference Bounds</button>
           <div>
             <input type="number" inputmode="decimal" id="cusdf-tilt" value="`+ default_tilt +`" step="0.1""></input>
             <span>Tilt (dB/Oct)</span>
@@ -109,8 +110,7 @@ doc.html(`
             <span>Ear Gain (dB)</span>
           </div>
           <button id="cusdf-UnTiltTHIS" style="margin-right: 10px">Remove Adjustments</button>
-          <button id="cusdf-harmanfilters" style="margin-right: 10px">Harman Filters</button>
-          <button id="cusdf-bounds">Preference Bounds</button>
+          <button id="cusdf-harmanfilters">Harman Filters</button>
         </div>
         <table class="manageTable">
           <colgroup>
@@ -388,7 +388,7 @@ let xAxis = d3.axisBottom(x)
     .tickValues(d3.merge([1,2,3].map(e=>xvals.map(m=>m*Math.pow(10,e)))).concat([250,20000]))
     .tickFormat(f => f>=1000 ? (f/1000)+"k" : f);
 
-let tickPattern = [3,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,3,0,3,0,0,0,3],
+let tickPattern = [3,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,3,0,3,0,3,3,0,0,3],
     getTickType = i => i =  tickPattern[i],
     tickThickness = [2,4,4,9,15].map(t=>t/10);
 
@@ -3908,7 +3908,21 @@ function addTutorial() {
         defOverlay.setAttribute("tutorial-def", def.name);
         defOverlay.setAttribute("tutorial-on", "false");
         defOverlay.className = "overlay-segment";
-        defOverlay.setAttribute("style", "flex-basis: "+ def.width +";")
+
+        if (def.position === "right") {
+            // Append from right (Non-Confidence Interval)
+            defOverlay.style.position = "absolute";
+            defOverlay.style.right = "1.8%";
+            defOverlay.style.top = "2%";
+            defOverlay.style.bottom = "0";
+            defOverlay.style.width = def.width;
+            defOverlay.style.height = "92%";
+            defOverlay.style.marginLeft = "0";
+            defOverlay.style.backgroundColor = "red";
+        } else {
+            // Append from left
+            defOverlay.style.flexBasis = def.width;
+        }
         overlayContainer.append(defOverlay);
         
         defButton.setAttribute("tutorial-def", def.name);

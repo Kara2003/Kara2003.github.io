@@ -1,25 +1,25 @@
 // Configuration options
-const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["VagariSense Target","Moondrop DUSK Spring Tips"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
       default_norm_db = 60,                         // Sets default dB normalization point
-      default_norm_hz = 630,                        // Sets default Hz normalization point (500Hz is recommended by IEC)
+      default_norm_hz = 500,                        // Sets default Hz normalization point (500Hz is recommended by IEC)
       max_channel_imbalance = 5,                    // Channel imbalance threshold to show ! in the channel selector
       alt_layout = true,                            // Toggle between classic and alt layouts
       alt_sticky_graph = true,                      // If active graphs overflows the viewport, does the graph scroll with the page or stick to the viewport?
       alt_animated = true,                          // Determines if new graphs are drawn with a 1-second animation, or appear instantly
-      alt_header = true,                            // Display a configurable header at the top of the alt layout
+      alt_header = false,                            // Display a configurable header at the top of the alt layout
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "HarutoHiroki",                  // Optional. Appended to the page title if share URLs are enabled
+      watermark_text = "STUDIO VAGARISENSE",                 // Optional. Watermark appears behind graphs
+      watermark_image_url = "",                     // Optional. If image file is in same directory as config, can be just the filename
+      page_title = "VagariSense GraphTool",                     // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
-      externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
-      expandable = false,                           // Enables button to expand iframe over the top of the parent page
+      externalLinksBar = false,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
+      expandable = true,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
       headerHeight = '0px',                         // Optional. If expandable=true, determines how much space to leave for the parent page header
       darkModeButton = true,                        // Adds a "Dark Mode" button the main toolbar to let users set preference
@@ -36,10 +36,9 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["Haruto 2024","Haruto 2021"] },
-    { type:"Neutral",    files:["KEMAR DF","IEF Neutral 2023","Etymotic"] },
-    { type:"Reviewer",   files:["Antdroid","Banbeucmas","HBB","Precogvision","Super Review 22","Timmy","VSG"] },
-    { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","AutoEQ","Rtings","Sonarworks"] }
+	{ type:"Preference", files:["VagariSense"] },
+    { type:"Harman",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
+    { type:"Neutral",    files:["IEF Neutral 2023","IEF Neutral","Etymotic"] }
 ];
 
 // Haruto's Addons
@@ -48,22 +47,19 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
        allowSquigDownload = false,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
-       default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "KEMAR DF",                   // Default RAW DF name
+       default_y_scale = "50db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
+       default_DF_name = "IEF Neutral",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
-       default_tilt = -0.8,                            // Default Custom DF tilt value
+       default_bass_shelf = 5,                         // Default Custom DF bass shelf value
+       default_tilt = 0,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
-       compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
-       allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
-       allowLanguageSelector = true;                   // Allow the creator to have a button top right to support them
-       availableLanguages = ["en", "ko"];              // List of available language codes
-       defaultLanguage = (function() {
-            const browserLang = navigator.language.split('-')[0];
-            return availableLanguages.includes(browserLang) ? browserLang : "en";
-       })();                                           // Determine default language based on user's browser
+       tiltableTargets = ["IEF Neutral"],                 // Targets that are allowed to be tilted
+       compTargets = ["IEF Neutral"],                     // Targets that are allowed to be used for compensation
+       allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
+       allowLanguageSelector = false;                   // Allow the creator to have a button top right to support them
+       availableLanguages = ["scn"];              // List of available language codes
+       defaultLanguage = "scn"                                           // Determine default language based on user's browser
        prioritizeTranslatedHeader = true;              // If true, prioritize translated header link from language files over config.js
        prioritizeTranslatedTutorial = true;            // If true, prioritize translated tutorial from language files over config.js
        prioritizeTranslatedAccessories = true;         // If true, prioritize translated accessories from language files over config.js
@@ -72,7 +68,6 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
 // Functions to support config options set above; probably don't need to change these
 // *************************************************************
 
-console.log(defaultLanguage);
 // But I will anyways haha - Haruto
 
 // Set up the watermark, based on config options above
@@ -88,7 +83,7 @@ function watermark(svg) {
     
     if ( watermark_text ) {
         wm.append("text")
-            .attrs({id:'wtext', x:0, y:80, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
+            .attrs({id:'wtext', x:0, y:20, "font-size":28, "text-anchor":"middle", "class":"graph-name"})
             .text(watermark_text);
     }
 
@@ -97,7 +92,7 @@ function watermark(svg) {
         .attr("opacity",0.2)
         .append("text")
         .attrs({x:765, y:314, "font-size":10, "text-anchor":"end", "class":"site_name"})
-        .text("graphtool.harutohiroki.com");
+        .text("vagarisense.pro");
 }
 
 
@@ -141,7 +136,11 @@ setLayout();
 const 
     // Short text, center-aligned, useful for a little side info, credits, links to measurement setup, etc. 
     simpleAbout = `
-        <p class="center">This graph database is maintained by HarutoHiroki with frequency responses generated via an "IEC60318-4"-compliant ear simulator. This web software is based on a heavily modified version of the <a href="https://github.com/mlochbaum/CrinGraph">CrinGraph</a> open source software project, with <a href="https://www.teachmeaudio.com/mixing/techniques/audio-spectrum">Audio Spectrum</a>'s definition source.</p>
+        <p class="center">
+            This graph database is maintained by R10SAKU. All measurements are done using 'IEC 60318-4' compliant ear simulator.
+            This web software is based on a <a href="https://github.com/HarutoHiroki/PublicGraphTool">HarutoHiroki's modified version of CrinGraph</a>,
+            which was <a href="https://github.com/mlochbaum/CrinGraph">originally developed by Marshall Lochbaum</a>
+        </p>
     `
     ;
     // Which of the above variables to actually insert into the page
@@ -233,25 +232,33 @@ setupGraphAnalytics();
 
 
 // If alt_header is enabled, these are the items added to the header
-let headerLogoText = "HarutoHiroki",
-    headerLogoImgUrl = "assets/images/haruto.svg",
+let headerLogoText = "SilicaGelGraphTool",
+    headerLogoImgUrl = "",
     headerLinks = [
     {
-        name: "Home",
-        url: "https://harutohiroki.com"
+        name: "Blog",
+        url: "https://blog.naver.com/fishnchips775"
     },
     {
-        name: "Ranking",
-        url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
+        name: "Head-Fi",
+        url: "https://www.head-fi.org/search/29911226/?c[users]=SilicaGel&o=date"
     },
     {
-        name: "Discord",
-        url: "https://discord.harutohiroki.com"
+        name: "Twitter",
+        url: "https://x.com/_silicagel"
     },
-    {
-        name: "Donate",
-        url: "https://ko-fi.com/harutohiroki"
-    },
+//  {
+//      name: "Ranking",
+//      url: "https://docs.google.com/spreadsheets/d/1DZTac1BxCLdmS2J4DDQyvKSVUZGnNhz2r86qMGcs_Jo/edit?pli=1#gid=330037169"
+//  },
+//  {
+//      name: "Discord",
+//      url: "https://discord.harutohiroki.com"
+//  },
+//  {
+//      name: "Donate",
+//      url: "https://ko-fi.com/harutohiroki"
+//  },
 //  {
 //      name: "GitHub",
 //      url: "https://github.com/HarutoHiroki"
@@ -294,6 +301,12 @@ let tutorialDefinitions = [
         name: 'Brilliance',
         width: '17.4%',
         description: 'The brilliance range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.'
+    },
+    {
+        name: "Non-Confidence Interval",
+        width: "12.8%",
+        description: "The brilliance range is composed entirely of harmonics and is responsible for sparkle and air of a sound. Over boosting in this region can accentuate hiss and cause ear fatigue.",
+        position: "right"
     }
 ]
 

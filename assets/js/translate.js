@@ -44,6 +44,8 @@ function updatePageTranslations() {
   if (prioritizeTranslatedAccessories) {
     updateAccessoriesContent();
   }
+  // Update watermark text
+  updateWatermarkText();
 }
 
 // Initialize language system
@@ -126,6 +128,16 @@ function updateTranslations() {
       t.addHelp || "(or middle/ctrl-click when selecting; or pin other IEMs)"
     );
   doc.select(".manageTable .addLock").text(t.lock || "LOCK");
+
+  // Tbody Alert
+  const alertText = t.selectModelAlert || "Select a model from the list below to graph its frequency response";
+  const style = document.createElement('style');
+  style.textContent = `
+    tbody.curves:empty:before {
+      content: '${alertText}';
+    }
+  `;
+  document.head.appendChild(style);
 
   // Equalizer panel
   doc.select(".extra-panel h4").text(t.uploading || "Uploading");
@@ -257,4 +269,10 @@ function updateAccessoriesContent() {
   const t = translations.accessories || {}; // Use empty object as fallback
 
   doc.select(".accessories aside").html(t.content || simpleAbout);
+}
+
+function updateWatermarkText() {
+  const t = translations.watermarkText || {}; // Use empty object as fallback
+
+  doc.select("#fr-graph #wtext").text(t.content || watermark_text);
 }

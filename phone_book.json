@@ -1,10 +1,91 @@
 [
   {
-    "name": "AudioSense",
+    "name": "64Audio",
     "phones": [
       {
-        "name": "DT200",
-        "file": "AudioSense DT200"
+        "name": "U12t",
+        "file": [
+          "64Audio U12t (M20 Filter, Divinus Velvet Tips)"
+        ],
+        "prefix": "64Audio U12t"
+      }
+    ]
+  },
+  {
+    "name": "Tanchjim",
+    "phones": [
+      {
+        "name": "Kara",
+        "file": [
+          "Tanchjim Kara T-APB Treble",
+          "Tanchjim Kara T-APB Bass"
+        ],
+        "prefix": "Tanchjim Kara"
+      },
+      {
+        "name": "Cora",
+        "file": [
+          "Tanchjim Cora"
+        ],
+        "prefix": "Tanchjim Cora"
+      }
+    ]
+  },
+  {
+    "name": "Moondrop",
+    "phones": [
+      {
+        "name": "KXXS",
+        "file": [
+          "Moondrop KXXS Normal Tips",
+          "Moondrop KXXS AET07",
+          "Moondrop KXXS Spring Tips"
+        ],
+        "prefix": "Moondrop KXXS"
+      },
+      {
+        "name": "DUSK",
+        "file": [
+          "Moondrop DUSK Spring Tips",
+          "Moondrop Dusk T-APB Treble"
+        ],
+        "prefix": "Moondrop DUSK"
+      },
+      {
+        "name": "Quarks",
+        "file": [
+          "Moondrop Quarks"
+        ],
+        "prefix": "Moondrop Quarks"
+      }
+    ]
+  },
+  {
+    "name": "Truthear",
+    "phones": [
+      {
+        "name": "Zero:Red",
+        "file": [
+          "Truthear ZeroRed Wide Tips",
+		  "Truthear ZeroRed Narrow Tips",
+		  "Truthear ZeroRed Spring Tips",
+		  "Truthear ZeroRed AET07",
+		  "Truthear ZeroRed CP145",
+		  "Truthear ZeroRed Final E"
+        ],
+        "prefix": "Truthear ZeroRed"
+      }
+    ]
+  },
+  {
+    "name": "Others",
+    "phones": [
+      {
+        "name": "Aeroflot Aviation IEM",
+        "file": [
+          "Aeroflot Aviation IEM"
+        ],
+        "prefix": "Aeroflot Aviation IEM"
       }
     ]
   }

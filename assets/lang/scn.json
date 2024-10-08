@@ -1,0 +1,120 @@
+{
+  "header": {
+    "logoText": "VagariSense GraphTool",
+    "links": [
+      {
+        "name": "Prism Café",
+        "url": "https://vagarisense.pro"
+      }
+    ]
+  },
+  "tutorial": [
+    {
+      "name": "极低频",
+      "description": "通常超出人类听力范围，所感大于所闻，影响声音力量感。"
+    },
+    {
+      "name": "低频",
+      "description": "决定声音的温暖程度。"
+    },
+    {
+      "name": "中低频",
+      "description": "中低频包含了大多数乐器的基本音成分，通常被认为是具有低频存在感的频段，过度增益会使高频乐器声音沉闷。"
+    },
+    {
+      "name": "中频",
+      "description": "决定乐器的存在感。该频段过度增益可能会导致耳疲劳。"
+    },
+    {
+      "name": "中高频",
+      "description": "中高频主要与打击乐器和节奏乐器的打击感有关，也影响女声表现。该频段影响声音明亮感，过度增益可能导致声音过分刺激。"
+    },
+    {
+      "name": "高频",
+      "description": "影响声音的明亮度、细节和清晰度，过度增益会导致刺耳，增益不足会导致声音距离偏远。"
+    },
+    {
+      "name": "极高频",
+      "description": "极高频表现为声音空气感，过度增益可能会导致耳疲劳。"
+    },
+    {
+      "name": "低精度区间",
+      "description": "IEC60318-4（711）测量设备无法准确测量此频段，且在实际听音环境中，佩戴深度、听力损失等外部因素都会影响该频段区间的表现，因此无法成为可靠参考。"
+    }
+  ],
+  "accessories": {
+    "content": "<p class=\"center\">Rio Sakurada 负责该页面的维护及翻译工作，使用符合 IEC 60318-4 标准的仿真耳测量。基于由 <a href=\"https://github.com/mlochbaum/CrinGraph\">Marshall Lochbaum</a> 开发并由 <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki</a> 以及 <a href=\"https://github.com/SilicaGel775/silicagel775.github.io\">SilicaGel775</a> 改版的 CrinGraph。</p>"
+  },
+  "watermarkText": {
+    "content": "STUDIO VAGARISENSE"
+  },
+  "main": {
+    "pin": "固定",
+    "selectBrands": "品牌",
+    "selectModels": "型号",
+    "selectEqualizer": "均衡器",
+    "searchBar": "搜索",
+    "copyUrl": "复制链接",
+    "screenshot": "截图",
+    "averageAll": "整体平均",
+    "yAxisScale": "Y 轴间距:",
+    "zoom": "缩放:",
+    "bass": "低频",
+    "mids": "中频",
+    "treble": "高频",
+    "normalize": "基准数据:",
+    "smooth": "平滑:",
+    "inspect": "审视数据",
+    "label": "标签",
+    "recolor": "重新着色",
+    "darkmode": "深色模式",
+    "preferenceAdjustments": "偏好调整:",
+    "tiltUnit": "倾斜 (dB/Oct)",
+    "bassUnit": "低频增益 (dB)",
+    "trebleUnit": "高频增益 (dB)",
+    "earGainUnit": "耳廓增益 (dB)",
+    "removeAdjustments": "移除参数",
+    "harmanFilters": "哈曼增益",
+    "preferenceBounds": "偏好区间",
+    "addHelp": "（按下鼠标滚轮或点击加号可选择多个数据）",
+    "lock": "锁定",
+    "selectModelAlert": "选择耳机以渲染频率响应曲线",
+    "uploading": "上传",
+    "uploadFR": "上传频响数据",
+    "uploadTarget": "上传目标频响数据",
+    "uploadSong": "上传音乐",
+    "uploadWarning": "上传的数据不会被保存",
+    "parametricEqualizer": "参数化均衡器",
+    "chooseEQModel": "选择 EQ 型号",
+    "preamp": "前置放大",
+    "type": "类型",
+    "frequency": "频率",
+    "gain": "增益",
+    "q": "Q 值",
+    "add": "+",
+    "remove": "-",
+    "sort": "分类",
+    "disable": "禁用",
+    "saveEQ": "保存 EQ 参数",
+    "autoEqFrequencyRange": "频率范围",
+    "autoEqGainRange": "增益范围",
+    "autoEqQRange": "Q 值范围",
+    "autoEQ": "AutoEQ",
+    "readme": "说明",
+    "eqDemo": "EQ 演示",
+    "pinkNoise": "粉红噪音",
+    "scarletFire": "Scarlet Fire",
+    "toneGenerator": "频率发生器",
+    "uploaded": "上传的音乐",
+    "toneGeneratorRange": "频率发生器范围",
+    "freq": "频率",
+    "miscellaneous": "杂项",
+    "left": "左",
+    "channelBalance": "声道平衡",
+    "right": "右",
+    "importEQ": "导入 EQ 参数",
+    "exportParametricEQ": "导出参数化 EQ",
+    "exportGraphicEQ": "导出图形化 EQ",
+    "autoEQRunning": "AutoEQ 正在运行, 可能需要等待 5 至 20 秒"
+  }
+}
