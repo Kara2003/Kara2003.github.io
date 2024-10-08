@@ -1,17 +1,5 @@
 [
   {
-    "name": "64Audio",
-    "phones": [
-      {
-        "name": "U12t",
-        "file": [
-          "64Audio U12t (M20 Filter, Divinus Velvet Tips)"
-        ],
-        "prefix": "64Audio U12t"
-      }
-    ]
-  },
-  {
     "name": "Tanchjim",
     "phones": [
       {
@@ -56,6 +44,13 @@
           "Moondrop Quarks"
         ],
         "prefix": "Moondrop Quarks"
+      },
+	  {
+        "name": "Blessing 3",
+        "file": [
+          "Moondrop Blessing 3"
+        ],
+        "prefix": "Moondrop Blessing 3"
       }
     ]
   },
