@@ -1,25 +1,5 @@
 [
   {
-    "name": "Tanchjim",
-    "phones": [
-      {
-        "name": "Kara",
-        "file": [
-          "Tanchjim Kara T-APB Treble",
-          "Tanchjim Kara T-APB Bass"
-        ],
-        "prefix": "Tanchjim Kara"
-      },
-      {
-        "name": "Cora",
-        "file": [
-          "Tanchjim Cora"
-        ],
-        "prefix": "Tanchjim Cora"
-      }
-    ]
-  },
-  {
     "name": "Moondrop",
     "phones": [
       {
@@ -51,6 +31,39 @@
           "Moondrop Blessing 3"
         ],
         "prefix": "Moondrop Blessing 3"
+      }
+    ]
+  },
+  {
+    "name": "NiceHCK",
+    "phones": [
+      {
+        "name": "NiceHCK YD520",
+        "file": [
+          "NiceHCK YD520 White Tips",
+		  "NiceHCK YD520 Black Tips"
+        ],
+        "prefix": "NiceHCK YD520"
+      }
+    ]
+  },
+  {
+    "name": "Tanchjim",
+    "phones": [
+      {
+        "name": "Kara",
+        "file": [
+          "Tanchjim Kara T-APB Treble",
+          "Tanchjim Kara T-APB Bass"
+        ],
+        "prefix": "Tanchjim Kara"
+      },
+      {
+        "name": "Cora",
+        "file": [
+          "Tanchjim Cora"
+        ],
+        "prefix": "Tanchjim Cora"
       }
     ]
   },
