@@ -96,6 +96,13 @@
           "Aeroflot Aviation IEM"
         ],
         "prefix": "Aeroflot Aviation IEM"
+      },
+      {
+        "name": "Haifsun WL6",
+        "file": [
+          "Haifsun WL6"
+        ],
+        "prefix": "Haifsun WL6"
       }
     ]
   }
