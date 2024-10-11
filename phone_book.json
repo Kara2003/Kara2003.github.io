@@ -6,8 +6,12 @@
         "name": "KXXS",
         "file": [
           "Moondrop KXXS Normal Tips",
-          "Moondrop KXXS AET07",
-          "Moondrop KXXS Spring Tips"
+          "Moondrop KXXS Spring Tips",
+		  "Moondrop KXXS AET07",
+		  "Moondrop KXXS Final E",
+		  "Moondrop KXXS SpinFit CP145",
+		  "Moondrop KXXS T-APB Bass",
+		  "Moondrop KXXS T-APB Treble"
         ],
         "prefix": "Moondrop KXXS"
       },
