@@ -18,7 +18,7 @@
     --font-color-inputs: hsl(0, 0%, 50%);
     
     --font-primary: 'Pretendard', 'Open Sans', system-ui, Helvetica, Arial, sans-serif, sans-serif;
-    --font-secondary: 'D2coding', monospace;
+    --font-secondary: monospace;
     
     --scrollbar-color: 255,255,255;
     --scrollbar-accent: 0,0,0;
