@@ -36,10 +36,10 @@ const init_phones = ["VagariSense Target","Moondrop DUSK"],// Optional. Which gr
 
 // Specify which targets to display
 const targets = [
-	{ type:"Preference", files:["VagariSense"] },
-    { type:"Harman",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
-	{ type:"Compensation",    files:["IEF Comp"] },
-    { type:"Neutral",    files:["IEF Neutral","IEF Neutral 2023","Rtings","Etymotic","ISO 11904-1 DF"] }
+	{ type:"参考目标", files:["VagariSense"] },
+    { type:"哈曼目标",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
+    { type:"中性目标",    files:["IEF Neutral","IEF Neutral 2023","Rtings","Etymotic","ISO 11904-1 DF"] },
+	{ type:"对比补偿目标",    files:["IEF Comp"] }
 ];
 
 // Haruto's Addons
@@ -52,7 +52,7 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        default_DF_name = "ISO 11904-1 DF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 5,                         // Default Custom DF bass shelf value
-       default_tilt = -0.8,                            // Default Custom DF tilt value
+       default_tilt = 0,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
        tiltableTargets = ["IEF Neutral"],                 // Targets that are allowed to be tilted
