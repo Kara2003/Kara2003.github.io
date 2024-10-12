@@ -36,10 +36,10 @@ const init_phones = ["VagariSense Target","Moondrop DUSK"],// Optional. Which gr
 
 // Specify which targets to display
 const targets = [
-	{ type:"参考目标", files:["VagariSense"] },
-    { type:"哈曼目标",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
-    { type:"中性目标",    files:["IEF Neutral","IEF Neutral 2023","Rtings","Etymotic","ISO 11904-1 DF"] },
-	{ type:"对比补偿目标",    files:["IEF Comp"] }
+	{ type:"参考", files:["VagariSense"] },
+    { type:"哈曼",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
+    { type:"中性",    files:["IEF Neutral","IEF Neutral 2023","Rtings","Etymotic","ISO 11904-1 DF"] },
+	{ type:"对比补偿",    files:["IEF Comp"] }
 ];
 
 // Haruto's Addons
