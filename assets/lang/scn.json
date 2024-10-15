@@ -81,7 +81,7 @@
     "selectModelAlert": "选择耳机以渲染频率响应曲线",
     "uploading": "上传",
     "uploadFR": "上传频响数据",
-    "uploadTarget": "上传目标频响数据",
+    "uploadTarget": "上传目标数据",
     "uploadSong": "上传音乐",
     "uploadWarning": "上传的数据不会被保存",
     "parametricEqualizer": "参数化均衡器",
