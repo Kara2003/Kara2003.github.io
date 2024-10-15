@@ -43,7 +43,7 @@
     }
   ],
   "accessories": {
-    "content": "<p class=\"center\">Rio Sakurada 负责该页面的维护及翻译工作，使用符合 IEC 60318-4 标准的仿真耳测量。基于由 <a href=\"https://github.com/mlochbaum/CrinGraph\">Marshall Lochbaum</a> 开发并由 <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki</a> 以及 <a href=\"https://github.com/SilicaGel775/silicagel775.github.io\">SilicaGel775</a> 改版的 CrinGraph。</p>"
+    "content": "<p class=\"center\">Rio Sakurada 负责该页面的维护及翻译工作，使用符合 IEC 60318-4 标准的仿真耳测量。基于由 <a href=\"https://github.com/mlochbaum/CrinGraph\">Marshall Lochbaum</a> 开发并由 <a href=\"https://github.com/HarutoHiroki/PublicGraphTool\">HarutoHiroki</a> 以及 <a href=\"https://github.com/potatosalad775/ExtendedGraphTool\">Jinwoo Lee</a> 改版的 CrinGraph。</p>"
   },
   "watermarkText": {
     "content": "STUDIO VAGARISENSE"
