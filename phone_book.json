@@ -23,6 +23,13 @@
         "prefix": "Moondrop DUSK"
       },
       {
+        "name": "Lan",
+        "file": [
+          "Moondrop Lan"
+        ],
+        "prefix": "Moondrop Lan"
+      },
+      {
         "name": "Quarks",
         "file": [
           "Moondrop Quarks"
