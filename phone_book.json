@@ -69,6 +69,13 @@
         "prefix": "Tanchjim Kara"
       },
       {
+        "name": "One",
+        "file": [
+          "Tanchjim One"
+        ],
+        "prefix": "Tanchjim One"
+      },
+      {
         "name": "Cora",
         "file": [
           "Tanchjim Cora"
