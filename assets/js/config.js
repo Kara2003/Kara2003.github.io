@@ -1,8 +1,8 @@
 // Configuration options
 const init_phones = ["VagariSense Target","Moondrop DUSK"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
-      default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
-      default_normalization = "Hz",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
+      default_channels = ["L"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
+      default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
       default_norm_db = 60,                         // Sets default dB normalization point
       default_norm_hz = 500,                        // Sets default Hz normalization point (500Hz is recommended by IEC)
       max_channel_imbalance = 5,                    // Channel imbalance threshold to show ! in the channel selector
@@ -37,9 +37,9 @@ const init_phones = ["VagariSense Target","Moondrop DUSK"],// Optional. Which gr
 // Specify which targets to display
 const targets = [
 	{ type:"参考", files:["VagariSense"] },
-    { type:"哈曼",     files:["Harman IE 2019v2","Harman IE 2017v2"] },
-    { type:"中性",    files:["IEF Neutral","IEF Neutral 2023","Rtings","Etymotic","ISO 11904-1 DF"] },
-	{ type:"对比补偿",    files:["IEF Comp"] }
+        { type:"哈曼", files:["Harman IE 2019v2"] },
+        { type:"中性", files:["KEMAR DF","IEF Neutral","IEF Neutral 2023","Etymotic"] },
+	{ type:"对比补偿", files:["IEF Comp"] }
 ];
 
 // Haruto's Addons
@@ -48,14 +48,14 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
        allowSquigDownload = false,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
-       default_y_scale = "crin",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "ISO 11904-1 DF",                   // Default RAW DF name
+       default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
+       default_DF_name = "KEMAR DF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 5,                         // Default Custom DF bass shelf value
-       default_tilt = 0,                            // Default Custom DF tilt value
+       default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["IEF Neutral"],                 // Targets that are allowed to be tilted
+       tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
        compTargets = ["IEF Comp"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Allow the creator to have a button top right to support them
