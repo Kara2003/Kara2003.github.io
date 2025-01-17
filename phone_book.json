@@ -42,6 +42,13 @@
           "Moondrop Blessing 3"
         ],
         "prefix": "Moondrop Blessing 3"
+      },
+	  {
+        "name": "MuseDash&Quarks2",
+        "file": [
+          "Moondrop MuseDash x Quarks2"
+        ],
+        "prefix": "Moondrop MuseDash&Quarks2"
       }
     ]
   },
