@@ -37,9 +37,9 @@ const init_phones = ["VagariSense Target","Moondrop DUSK"],// Optional. Which gr
 // Specify which targets to display
 const targets = [
 	{ type:"参考", files:["VagariSense"] },
-        { type:"哈曼", files:["Harman IE 2019v2"] },
-        { type:"中性", files:["KEMAR DF","IEF Neutral","IEF Neutral 2023","Etymotic"] },
-	{ type:"对比补偿", files:["IEF Comp"] }
+    { type:"哈曼", files:["Harman IE 2016","Harman IE 2019v2"] },
+    { type:"厂商", files:["Moondrop VDSF","Tanchjim","Etymotic"] },
+	
 ];
 
 // Haruto's Addons
@@ -56,7 +56,7 @@ const  preference_bounds_name = "Preference Bounds RAW",  // Preference bounds n
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
        tiltableTargets = ["VagariSense"],                 // Targets that are allowed to be tilted
-       compTargets = ["IEF Comp"],                     // Targets that are allowed to be used for compensation
+       compTargets = [""],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Allow the creator to have a button top right to support them
        availableLanguages = ["scn"];              // List of available language codes
